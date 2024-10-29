@@ -1,0 +1,100 @@
+.lang-en-UK.home-page-body .news,
+.lang-es-ES.home-page-body .news,
+.lang-ch-CH.home-page-body .news,
+.lang-es-UK.home-page-body .section-news,
+.lang-es-ES.home-page-body .section-news,
+.lang-es-CH.home-page-body .section-news {
+	height: auto;
+}
+
+/*
+.lang-en-UK.home-page-body .news .section-blocks-line,
+.lang-es-ES.home-page-body .news .section-blocks-line,
+.lang-ch-CH.home-page-body .news .section-blocks-line,
+.lang-en-UK.home-page-body .section-news .section-blocks-line,
+.lang-es-ES.home-page-body .section-news .section-blocks-line,
+.lang-ch-CH.home-page-body .section-news .section-blocks-line {
+	background:#CFD8F7;
+}
+*/
+.lang-en-UK.home-page-body .news .video-main-slider:before,
+.lang-es-ES.home-page-body .news .video-main-slider:before,
+.lang-ch-CH.home-page-body .news .video-main-slider:before,
+.lang-en-UK.home-page-body .section-news .video-main-slider:before,
+.lang-es-ES.home-page-body .section-news .video-main-slider:before,
+.lang-ch-CH.home-page-body .section-news .video-main-slider:before {
+	content: none;
+}
+
+/*
+.lang-en-UK.home-page-body .news .section-title,
+.lang-en-UK.home-page-body .news .section-title a,
+.lang-es-ES.home-page-body .news .section-title,
+.lang-es-ES.home-page-body .news .section-title a,
+.lang-ch-CH.home-page-body .news .section-title,
+.lang-ch-CH.home-page-body .news .section-title a,
+.lang-en-UK.home-page-body .section-news .section-title,
+.lang-en-UK.home-page-body .section-news .section-title a,
+.lang-es-ES.home-page-body .section-news .section-title,
+.lang-es-ES.home-page-body .section-news .section-title a,
+.lang-ch-CH.home-page-body .section-news .section-title,
+.lang-ch-CH.home-page-body .section-news .section-title a {
+	color:#333333;
+}
+*/
+@media (min-width: 992px) {
+
+	.lang-en-UK.home-page-body .sliders-col-left,
+	.lang-es-ES.home-page-body .sliders-col-left,
+	.lang-ch-CH.home-page-body .sliders-col-left {
+		max-width: initial;
+		width: 50%;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.lang-en-UK.home-page-body .section-blocks-sliders,
+	.lang-es-ES.home-page-body .section-blocks-sliders,
+	.lang-ch-CH.home-page-body .section-blocks-sliders {
+		height: initial;
+	}
+}
+
+.lang-en-UK.home-page-body .section1-10-2 .sliders-col-left,
+.lang-es-ES.home-page-body .section1-10-2 .sliders-col-left,
+.lang-ch-CH.home-page-body .section1-10-2 .sliders-col-left {
+	background: #B3C061;
+}
+
+.sliders-col-title {
+	min-height: 2rem;
+}
+
+.lang-en-UK.home-page-body .btn-header-question,
+.lang-es-ES.home-page-body .btn-header-question,
+.lang-ch-CH.home-page-body .btn-header-question {
+	background-image: none;
+	position: relative;
+	/* padding: 9px 38px 9px 20px; */
+}
+
+.lang-en-UK.home-page-body .btn-header-question:after,
+.lang-es-ES.home-page-body .btn-header-question:after,
+.lang-ch-CH.home-page-body .btn-header-question:after {
+	content: '';
+	background-image: url(/rea/images/chat.svg);
+	display: inline-block;
+	width: 15px;
+	height: 13px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.lang-en-UK .inner-footer-info::before,
+.lang-es-ES .inner-footer-info::before,
+.lang-ch-CH .inner-footer-info::before {
+	background-image: url("/rea/images/order-for-success.svg"), url("/logo/rea-logo-eng.svg");
+}

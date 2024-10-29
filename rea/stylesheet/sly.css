@@ -1,0 +1,278 @@
+/*sly slider*/
+
+.sly-container {
+	position: relative;
+	/* overflow: hidden; */
+	max-width: 100%;
+	min-width: 100%;
+	/* margin-top: -30px; */
+}
+
+.sly-wrap {
+	position: relative;
+}
+
+/* Frame */
+.sly-frame {
+	/* overflow:visible!important; */
+}
+
+.sly-row {
+	/* display: flex;
+    align-items: initial;
+    justify-content: flex-start;
+	min-width:100%;
+	max-width:100%;
+	margin-bottom:20px; */
+}
+
+.sly-frame.embed-articles-wrap {
+	padding-bottom: 0px;
+}
+
+/* Scrollbar */
+.sly-scrollbar-track {
+	height: 20px;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: flex-end;
+	/* margin-top: -26px; */
+	/* margin-bottom: 10px; */
+	opacity: 0.8;
+}
+
+.sly-scrollbar {
+	width: 100%;
+	margin: 0 0 0em 0;
+	height: 10px;
+	/* background:#f3f3f3; */
+	line-height: 0;
+	border-radius: 5px;
+	transition: 0.1s;
+	position: relative;
+}
+
+.sly-scrollbar:hover {
+	height: 14px;
+}
+
+.sly-scrollbar .handle {
+	width: 100px;
+	height: 6px;
+	background: #00000082;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.1s;
+	bottom: 2px;
+	position: absolute;
+}
+
+.sly-scrollbar:hover .handle,
+.sly-scrollbar .handle.dragged {
+	height: 10px;
+}
+
+.sly-scrollbar .handle .mousearea {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Pages */
+.sly-pages {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.sly-pages li {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0 4px;
+	text-indent: -999px;
+	border-radius: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.sly-pages li:hover {
+	background: #aaa;
+}
+
+.sly-pages li.active {
+	background: #666;
+}
+
+.sly-btns {
+	color: #333;
+	display: inline-block;
+	margin-bottom: 20px;
+	background: #fff;
+	border-radius: 15px;
+	padding: 6px 8px;
+	z-index: 2;
+	box-shadow: 0 0 5px #00000026;
+}
+
+@media(min-width:768px) {
+	.sly-btns {
+		/* padding-right: 55px; */
+	}
+}
+
+.sly-btns>div {
+	display: inline-block;
+	line-height: 21px;
+	letter-spacing: 1px;
+	transition: 0.3s;
+	vertical-align: middle;
+}
+
+.sly-counters {
+	height: 18px;
+}
+
+.sly-prev {
+	width: 16px;
+	height: 16px;
+	background: url(../images/sly-prev.svg)center center no-repeat;
+	cursor: pointer;
+	text-indent: -999px;
+	margin-right: 4px;
+}
+
+.sly-next {
+	width: 16px;
+	height: 16px;
+	background: url(../images/sly-next.svg)center center no-repeat;
+	cursor: pointer;
+	text-indent: -999px;
+	margin-left: 4px;
+}
+
+.sly-next:hover,
+.sly-prev:hover {
+	/* filter: invert(23%) sepia(39%) saturate(5490%) hue-rotate(11deg) brightness(99%) contrast(101%); */
+	opacity: 0.8;
+}
+
+.sly-next.disabled,
+.sly-prev.disabled {
+	opacity: 0.5;
+	filter: grayscale(1);
+}
+
+.sly-row>div:first-child {
+	/* padding-left: 0; */
+}
+
+.sly-row>div:last-of-type {
+	/* padding-right: 0; */
+}
+
+.sly-hidden {
+	opacity: 0;
+	height: 0px;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/*end sly*/
+
+/*custom sly*/
+
+
+
+.section-blocks-line .sly-btns {
+	position: absolute;
+	top: -60px;
+	right: 0px;
+	left: auto;
+}
+
+@media (min-width: 768px) {
+	.section-blocks-line .sly-btns {
+		position: absolute;
+		top: -70px;
+		right: 0px;
+		left: auto;
+	}
+}
+
+.home-teaser-slider .sly-btns {
+	position: absolute;
+	top: auto;
+	right: 0px;
+	margin-bottom: 0;
+	margin-top: 0px;
+	bottom: -60px;
+}
+
+
+@media (min-width:992px) {
+	.home-teaser-slider .sly-btns {
+		position: absolute;
+		top: -60px;
+		right: 0px;
+		bottom: auto;
+		left: auto;
+	}
+
+}
+
+.inner-page .sly-btns {
+	position: relative;
+	top: 0;
+	left: 0px;
+	float: right;
+}
+
+.inner-page .sly-btns+div {
+	clear: both;
+}
+
+.inner-page-background-wrap .sly-btns {
+	margin-right: 35px;
+}
+
+.inner-slider-wrap .sly-btns {
+	position: absolute;
+	top: auto;
+	left: auto;
+	float: none;
+	right: 30px;
+	bottom: -52px;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+@media (min-width: 572px) {
+	.inner-slider-wrap .sly-btns {
+		position: relative;
+		margin-right: 30px;
+		margin-top: -111px;
+		float: right;
+	}
+}
+
+@media (min-width: 768px) {
+	.inner-slider-wrap .sly-btns {
+		position: relative;
+		margin-right: 30px;
+		margin-top: -144px;
+		float: right;
+	}
+}
+
+@media (min-width: 1400px) {
+	.inner-slider-wrap .sly-btns {
+		margin-top: -151px;
+	}
+}

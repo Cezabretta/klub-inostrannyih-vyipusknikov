@@ -1,0 +1,1363 @@
+/*#region assist-view (line-height)*/
+.assist-font-times body {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.assist-spacing-normal body,
+.assist-spacing-normal body * {
+	letter-spacing: normal;
+}
+
+.assist-spacing-medium body,
+.assist-spacing-medium body * {
+	letter-spacing: 1px;
+}
+
+.assist-spacing-large body,
+.assist-spacing-large body * {
+	letter-spacing: 2px;
+}
+
+/*region assist-view lineheight*/
+.assist-lineheight-normal body,
+.assist-lineheight-normal body * {
+	line-height: normal;
+}
+
+.assist-lineheight-medium body,
+.assist-lineheight-medium body * {
+	line-height: 1.66em;
+}
+
+.assist-lineheight-large body,
+.assist-lineheight-large body * {
+	line-height: 1.9em;
+}
+
+/*castom*/
+.assiston.assist-lineheight-medium {
+	--increase-factor: 1.6;
+}
+
+.assiston.assist-lineheight-large {
+	--increse-factor: 1.99;
+}
+
+/*#endregion*/
+
+/*#region assist-view (font-size)*/
+html.assist-normal {
+	font-size: 14px;
+}
+
+html.assist-increased {
+	font-size: 16px;
+}
+
+html.assist-medium {
+	font-size: 18px;
+}
+
+html.assist-large {
+	font-size: 28px;
+}
+
+.assist-large .inner-page-teachers-item-descr-bg {
+	padding: 10px;
+}
+
+/* not increased elements*/
+/* increased only mobile
+.assist-view .section-title{
+	font-size: 24px;
+}
+*/
+@media(min-width:572px) {
+	.assist-view .section-title {
+		font-size: 30px;
+	}
+
+	.assist-view .inner-page-section .section-title {
+		font-size: 30px;
+	}
+}
+
+@media(min-width:768px) {
+	.assist-view .section-title {
+		font-size: 45px;
+	}
+
+	.assist-view .inner-page-section .section-title {
+		font-size: 45px;
+	}
+}
+
+@media(min-width:1400px) {
+	.assist-view .section-title {
+		font-size: 60px;
+	}
+
+	.assist-view .inner-page-section .section-title {
+		font-size: 60px;
+	}
+}
+
+.assist-view .inner-title {
+	font-size: 30px;
+}
+
+@media(min-width:572px) {
+	.assist-view .inner-title {
+		font-size: 45px;
+	}
+}
+
+@media(min-width:960px) {
+	.assist-view .inner-title {
+		font-size: 60px;
+	}
+}
+
+.assist-view .section-inner-footer a.mob-link {
+	width: 100%;
+}
+
+.assist-view .inner-footer-menu {
+	column-count: 1;
+}
+
+/*#endregion*/
+
+/*#region assist-view element styles*/
+.assist-view .menu-block {
+	height: 100px;
+}
+
+.assist-normal .logo-block img,
+.assist-normal .user-menu-icons svg,
+.assist-normal .burger-icon,
+.assist-normal .input-search-with-icon svg,
+.assist-normal .flags-block img,
+.assist-normal .btn-header-question::after,
+.assist-normal .ya-share2__list {
+	transform: scale(1, 1);
+}
+
+.assist-normal .open-menu span.burger-icon {
+	transform: rotate(45deg) scale(1, 1);
+}
+
+.assist-increased .image-logo img,
+.assist-increased .user-menu-icons svg,
+.assist-increased .burger-icon,
+.assist-increased .input-search-with-icon svg,
+.assist-increased .flags-block img,
+.assist-increased .btn-header-question::after,
+.assist-increased .btn-header-documents::after,
+.assist-increased .ya-share2__list {
+	transform: scale(1.3, 1.3);
+}
+
+.assist-increased .open-menu span.burger-icon {
+	transform: rotate(45deg) scale(1.3, 1.3);
+}
+
+.assist-medium .image-logo img,
+.assist-medium .user-menu-icons svg,
+.assist-medium .burger-icon,
+.assist-medium .input-search-with-icon svg,
+.assist-medium .flags-block img,
+.assist-medium .btn-header-question::after,
+.assist-medium .btn-header-documents::after,
+.assist-medium .ya-share2__list {
+	transform: scale(1.6, 1.6);
+}
+
+.assist-medium .open-menu span.burger-icon {
+	transform: rotate(45deg) scale(1.6, 1.6);
+}
+
+.assist-large .image-logo img,
+.assist-large .user-menu-icons svg,
+.assist-large .burger-icon,
+.assist-large .input-search-with-icon svg,
+.assist-large .flags-block img,
+.assist-large .btn-header-question::after,
+.assist-large .btn-header-documents::after,
+.assist-large .ya-share2__list {
+	transform: scale(2, 2);
+}
+
+@media (min-width: 1401px) {
+
+	.assist-increased span.text-logo,
+	.assist-medium span.text-logo,
+	.assist-large span.text-logo {
+		margin-left: 80px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.assist-increased .image-logo img,
+	.assist-medium .image-logo img,
+	.assist-large .image-logo img {
+		transform: none;
+	}
+
+	.assist-medium .image-logo img,
+	.assist-large .user-menu-icons svg {
+		transform: (1.3, 1.3);
+	}
+}
+
+.assist-large .open-menu span.burger-icon {
+	transform: rotate(45deg) scale(2, 2);
+}
+
+/*выравние элементов с position: absolut*/
+.assist-normal .input-search-with-icon span,
+.assist-increased .input-search-with-icon span {
+	top: 13px;
+}
+
+.assist-medium .input-search-with-icon span {
+	top: 10px;
+}
+
+.assist-large .input-search-with-icon span {
+	top: 2px;
+}
+
+.assist-large .btn-header-question::after {
+	top: 20px;
+	right: 15px;
+}
+
+.assist-normal .btn-header-documents::after,
+.assist-increased .btn-header-documents::after {
+	top: 5px;
+}
+
+.assist-medium .btn-header-documents::after {
+	top: 20%
+}
+
+.assist-large .btn-header-documents::after {
+	top: 30%
+}
+
+@media (max-width: 1080px) {
+	.assist-increased .btn-header-question {
+		transform: scale(1.3, 1.3);
+	}
+
+	.assist-medium .btn-header-question {
+		transform: scale(1.6, 1.6);
+	}
+
+	.assist-large .btn-header-question {
+		transform: scale(2, 2);
+		margin-left: 18px;
+	}
+
+	.assist-large .btn-header-question::after {
+		transform: scale(1.1);
+		top: 12px;
+		right: 10px;
+	}
+}
+
+.assist-normal .events-calendar-item-month,
+.assist-normal .calendar-moth-title,
+.assist-increased .events-calendar-item-month,
+.assist-increased .calendar-moth-title,
+.assist-medium .events-calendar-item-month,
+.assist-medium .calendar-moth-title {
+	top: -5px;
+}
+
+.assist-large .events-calendar-item-month,
+.assist-large .calendar-moth-title {
+	top: -15px;
+}
+
+.assist-large .events-calendar-item {
+	padding-top: 25px;
+}
+
+.assist-large .menu-blocks-list {
+	gap: 0 40px;
+}
+
+.assist-large .main-menu-blocks-list.menu-blocks-list {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.assist-large .main-menu-blocks-list .menu-blocks-item:nth-child(2n+1) {
+	grid-column-start: 1;
+}
+
+.assist-large .main-menu-blocks-list .menu-blocks-item:nth-child(2n) {
+	grid-column-start: 2;
+}
+
+.assist-large .top-menu-blocks-list.menu-blocks-list {
+	margin-bottom: 30px;
+	gap: 0 12px;
+}
+
+.assist-large .menu-blocks-item {
+	padding-bottom: 30px;
+}
+
+.assist-large .menu-blocks-item>a,
+.assist-large .menu-blocks-title>a {
+	font-size: 1.2859rem;
+	line-height: 1.1111;
+}
+
+.assist-large .menu-blocks-title ul {
+	font-size: 1rem;
+	line-height: 1.3571;
+}
+
+@media (max-width: 578px) {
+
+	.assist-view .menu-blocks-list,
+	.assist-view .main-menu-blocks-list.menu-blocks-list {
+		grid-template-columns: 1fr;
+		gap: 0 15px;
+	}
+
+	.assist-view .top-menu-blocks-list .menu-blocks-item:nth-child(n),
+	.assist-view .main-menu-blocks-list .menu-blocks-item:nth-child(n) {
+		grid-column-start: 1;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.assist-large .menu-blocks-list,
+	.assist-large .main-menu-blocks-list.menu-blocks-list {
+		grid-template-columns: 1fr;
+		gap: 0 15px;
+	}
+
+	.assist-large .top-menu-blocks-list .menu-blocks-item:nth-child(n),
+	.assist-large .main-menu-blocks-list .menu-blocks-item:nth-child(n) {
+		grid-column-start: 1;
+	}
+}
+
+.assist-view .menu-blocks-title a {
+	display: block;
+	height: fit-content;
+}
+
+/*#endregion*/
+
+/*#region https://masonry.desandro.com/ пеопределение стилей main.css*/
+
+.assist-view .flex-row-menu-inside>div.grid-item {
+	width: 100% !important;
+}
+
+@media (min-width: 960px) and (max-width: 1539px) {
+	.assist-view .flex-row-menu-inside>div.grid-item {
+		width: 50% !important;
+	}
+}
+
+@media (min-width: 1540px) {
+	.assist-view .flex-row-menu-inside>div.grid-item {
+		width: 30% !important;
+	}
+}
+
+/*#endregion*/
+
+/*#region assist-no-image*/
+/*main-page*/
+.assist-no-image body:not(.inner-page-body) {
+	background: #6366d1;
+}
+
+.assist-no-image .main-row-item img,
+.assist-no-image .news-line-wrap img,
+.assist-no-image .video-main-slider video,
+.assist-no-image .main-slider::before,
+.assist-no-image .video-main-slider::before,
+.assist-no-image .section1-block-text,
+.assist-no-image .news-block-row .main-row-item-content:before,
+.assist-no-image .home-teaser-slider .main-row-item-content.with-text::before,
+.assist-no-image .home-announcements-slider .main-row-item-content::after,
+.assist-no-image .news-list-item-image,
+.assist-no-image .flex-row-top>a>img {
+	display: none;
+}
+
+.assist-no-image .news-block-date,
+.assist-no-image .section-news .news-block-row a.main-row-item-content::before,
+.assist-no-image .footer-line-wrap,
+.assist-no-image .section-home-footer .section-blocks-line {
+	background-color: transparent;
+}
+
+.assist-no-image .video-main-slider {
+	background-image: none !important;
+	background-color: #6366d1;
+}
+
+.assist-no-image :not(.inner-page-body) .flex-top-header,
+.assist-no-image .reu-slider-promo,
+.assist-no-image .video-main-slider::before,
+.assist-no-image .section-welcome .home-slider__item {
+	background-color: #6366d1;
+}
+
+.assist-no-image .reu-slider-promo,
+.assist-no-image .reu-section-wrap,
+.assist-no-image .reu_section_block {
+	background-image: none;
+	background-color: #585bbc;
+}
+
+.assist-no-image .main-row-item-content[style*="background-image"] {
+	background-image: none !important;
+	background-color: #585bbc;
+}
+
+.assist-no-image .section-news .news-block-row a.main-row-item-content {
+	background-color: #585bbc;
+}
+
+.assist-transparent .show>.btn-secondary.dropdown-toggle {
+	background-color: inherit;
+	border-color: inherit;
+}
+
+.assist-no-image .anno-tag-item {
+	background: none !important;
+}
+
+.assist-no-image .important-list-col,
+.assist-no-image .section-home-footer .data-alt-item {
+	background-color: #585bbc;
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
+.assist-no-image .b24-widget-button-social-item {
+	background-color: #585bbc;
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
+.assist-no-image .section-welcome .main-row-item,
+.assist-no-image .home-announcements-slider-wrap .main-row-item {
+	min-height: 100px;
+}
+
+.assist-no-image .data-alt-item {
+	height: 100%;
+	color: inherit;
+}
+
+.assist-no-image .collapse {
+	display: block;
+}
+
+.assist-no-image .collapsed-card-header::after {
+	display: none;
+}
+
+.assist-no-image .card,
+.assist-no-image .dropdown-filter-menu,
+.assist-no-image .dropdown-filter-item .card-header[aria-expanded=true],
+.assist-no-image .dropdown-filter-item .card-header[aria-expanded=true]+.collapsed-card-callapse {
+	background: transparent;
+}
+
+.assist-no-image .show>.btn-danger.dropdown-toggle {
+	background-color: transparent;
+}
+
+.assist-no-image .btn[data-toggle="collapse"] {
+	font-weight: 800;
+	font-size: 1.2rem;
+	border-color: transparent;
+}
+
+.assist-no-image .btn[data-toggle="collapse"]:active {
+	border-color: transparent;
+}
+
+.assist-no-image .btn[data-toggle="collapse"] i::before {
+	display: none;
+}
+
+.assist-no-image .btn[data-toggle="collapse"]:not(:disabled):not(.disabled) {
+	cursor: default;
+}
+
+.assist-no-image .btn[data-toggle="collapse"].btn-outline-secondary,
+.assist-no-image .btn[data-toggle="collapse"].btn-outline-secondary:hover {
+	color: initial;
+	background-color: transparent;
+}
+
+/*inner-page*/
+.assist-no-image .inner-page-body,
+.assist-no-image .inner-page-header,
+.assist-no-image .inner-p age-content-wrap {
+	background-image: none !important;
+	background-color: transparent !important;
+}
+
+.assist-no-image .fotoalbum-item-conten {
+	background-image: none !important;
+}
+
+.assist-no-image .inner-page-content img,
+.assist-no #section-2321 tr>td:first-child,
+.assist-no-image .newsfoto-slider-for,
+.assist-no-image .inner-page-fotoalbum-row,
+.assist-no-image .last-news-img,
+.assist-no-image .sly-container-calendar .sly-frame::after,
+.assist-no-image .sly-container-calendar .sly-frame::before {
+	display: none;
+}
+
+.assist-no-image .calendar-moth-title {
+	background: transparent;
+}
+
+.assist-no-image .news-list-tem-image {
+	display: none;
+}
+
+.assist-no-image .news-list-tem-content,
+.assist-no-image .other-news-item {
+	border: 2px solid transparent;
+	border-radius: 20px;
+}
+
+/*menu-blocks*/
+.assist-no-image .menu-blocks-item-nonav {
+	padding-bottom: 20px;
+}
+
+.assist-no-image .menu-blocks-item-nonav a {
+	padding: 20px 20px;
+	border: 2px solid #585bbc;
+	border-radius: 15px;
+}
+
+.assist-no-image .menu-blocks-item-nav .menu-blocks-title {
+	margin-top: 0;
+	border-color: #585bbc !important;
+}
+
+.assist-no-image .menu-blocks-img {
+	display: none;
+	height: 0 !important;
+}
+
+.assist-no-image .menu-blocks-item a {
+	display: block;
+	height: fit-content;
+}
+
+/*mobile*/
+.assist-no-image .home-slider__img-content,
+.assist-no-image .home-slider__content img,
+.assist-no-image .home-slider__img,
+.assist-no-image .section1-block-text,
+.assist-no-image .section1-block-counters {
+	display: none;
+}
+
+.assist-no-image .home-slider__content {
+	background-image: none !important;
+}
+
+/*#endregion*/
+
+/*#region assist-transperent*/
+/*main-page*/
+.assist-transparent .main-row-item img,
+.assist-transparent .news-line-wrap img,
+.assist-transparent .video-main-slider video,
+.assist-transparent .main-slider::before,
+.assist-transparent .video-main-slider::before,
+.assist-transparent .section1-block-text,
+.assist-transparent .news-block-row .main-row-item-content:before,
+.assist-transparent .home-teaser-slider .main-row-item-content.with-text::before,
+.assist-transparent .home-announcements-slider .main-row-item-content::after,
+.assist-transparent .news-list-item-image,
+.assist-transparent .flex-row-top>a>img,
+.assist-transparent .home-slider__img-content,
+.assist-transparent .home-slider__content img,
+.assist-transparent .home-slider__img,
+.assist-transparent .section1-block-text,
+.assist-transparent .section1-block-counters {
+	display: none;
+}
+
+.assist-transparent .main-row-item-content[style*="background-image"],
+.assist-transparent .news-block-date,
+.assist-transparent .section-news .news-block-row a.main-row-item-content::before,
+.assist-transparent span.title-widget,
+.assist-transparent .footer-line-wrap,
+.assist-transparent .section-home-footer .section-blocks-line,
+.assist-transparent .section-welcome,
+.assist-transparent .section-welcome .home-slider__item,
+.assist-transparent .home-slider__item,
+.assist-transparent .anons-block,
+.assist-transparent .anons-block .home-slider__item,
+.assist-transparent .section-news .subsection-main,
+.assist-transparent .section-news .home-slider__item {
+	background-color: transparent;
+}
+
+.assist-transparent .bg-invert,
+.assist-transparent .sliders-col-right,
+.assist-transparent section {
+	background-color: transparent !important;
+}
+
+.assist-transparent .video-main-slider,
+.assist-transparent .home-slider__content {
+	background-image: none !important;
+	background-color: transparent;
+}
+
+.assist-transparent .grid-item.social-reu,
+.assist-transparent .reu-slider-promo,
+.assist-transparent .video-main-slider::before,
+.assist-transparent .section-home-footer {
+	background-color: transparent;
+}
+
+.assist-transparent .reu-slider-promo,
+.assist-transparent .reu-section-wrap,
+.assist-transparent .reu_section_block {
+	background-image: none;
+	background-color: transparent;
+}
+
+.assist-transparent .main-row-item-content {
+	background-image: none !important;
+	background-color: transparent;
+}
+
+.assist-transparent .section-news .news-block-row a.main-row-item-content {
+	background-color: transparent;
+}
+
+.assist-transparent .show>.btn-secondary.dropdown-toggle {
+	background-color: inherit;
+	border-color: inherit;
+}
+
+.assist-transparent .anno-tag-item,
+.assist-transparent .section-welcome,
+.assist-transparent .home-section .banners-block {
+	background: none !important;
+}
+
+.assist-transparent .section-welcome .main-row-item,
+.assist-transparent .home-announcements-slider-wrap .main-row-item {
+	min-height: 100px;
+}
+
+.assist-transparent .data-alt-item {
+	height: 100%;
+	color: inherit;
+}
+
+.assist-transparent .section-home-footer .data-alt-item {
+	border: 2px solid transparent;
+	border-radius: 20px;
+}
+
+.assist-transparent .home-announcements-slider .main-row-item-content:hover {
+	background-color: transparent;
+}
+
+.assist-transparent .collapse {
+	display: block;
+}
+
+.assist-transparent .collapsed-card-header::after {
+	display: none;
+}
+
+.assist-transparent .card,
+.assist-transparent .dropdown-filter-menu,
+.assist-transparent .dropdown-filter-item .card-header[aria-expanded=true],
+.assist-transparent .dropdown-filter-item .card-header[aria-expanded=true]+.collapsed-card-callapse {
+	background: transparent;
+}
+
+.assist-transparent .show>.btn-danger.dropdown-toggle {
+	background-color: transparent;
+}
+
+.assist-transparent .btn[data-toggle="collapse"] {
+	font-weight: 800;
+	font-size: 1.2rem;
+	border-color: transparent;
+}
+
+.assist-transparent .btn[data-toggle="collapse"]:active {
+	border-color: transparent;
+}
+
+.assist-transparent .btn[data-toggle="collapse"] i::before {
+	display: none;
+}
+
+.assist-transparent .btn[data-toggle="collapse"]:not(:disabled):not(.disabled) {
+	cursor: initial;
+}
+
+.assist-transparent .btn[data-toggle="collapse"].btn-outline-secondary,
+.assist-transparent .btn[data-toggle="collapse"].btn-outline-secondary:hover {
+	color: inherit;
+	background-color: transparent;
+}
+
+/*inner-page*/
+.assist-transparent .inner-page-header,
+.assist-transparent .inner-page-content-wrap {
+	background-image: none !important;
+	background-color: transparent !important;
+	color: inherit;
+}
+
+.assist-transparent .inner-page-header::before,
+.assist-transparent .inner-page-content-wrap::before {
+	background: transparent;
+}
+
+.assist-transparent .inner-page-section,
+.assist-transparent .important-list-col,
+.assist-transparent .inner-page-content .list-group-item {
+	background: transparent;
+}
+
+.assist-transparent .inner-header-menu-wrap {
+	background: transparent;
+	backdrop-filter: none;
+}
+
+.assist-transparent .inner-page-body .main-row-item-content {
+	background: transparent !important;
+}
+
+.assist-transparent .inner-page-ralated-blocks-wrap .ralated-blocks-content:before {
+	background: transparent;
+}
+
+.assist-transparent .table .table {
+	background-color: transparent;
+}
+
+.assist-transparent .section-inner-footer {
+	background: transparent;
+}
+
+.assist-transparent .fotoalbum-item-conten {
+	background-image: none !important;
+}
+
+.assist-transparent .inner-page-content img,
+.assist-transparent #section-2321 tr>td:first-child,
+.assist-transparent .newsfoto-slider-for,
+.assist-transparent .inner-page-fotoalbum-row,
+.assist-transparent .sly-container-calendar .sly-frame::after,
+.assist-transparent .sly-container-calendar .sly-frame::before {
+	display: none;
+}
+
+.assist-transparent .calendar-moth-title {
+	background: transparent;
+}
+
+.assist-transparent .page-event-content-section .list-group-item,
+.assist-transparent .news-filter-item {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+.assist-transparent .news-list-item-content,
+.assist-transparent .other-news-item {
+	border: 2px solid;
+	border-radius: 20px;
+}
+
+.assist-transparent .news-list-tem-image {
+	display: none;
+}
+
+.assist-transparent .header-inner-page,
+.assist-transparent .inner-page-header,
+.assist-transparent .inner-page-line,
+.assist-transparent .inner-page-content-wrap,
+.assist-transparent .staff-info-block,
+.assist-transparent option:checked {
+	border-bottom: 1px solid;
+}
+
+.assist-transparent .form-panic-text {
+	border-top: 1px solid;
+}
+
+.assist-transparent .section-first-gordost-title,
+.assist-transparent .reu-section-title,
+.assist-transparent .main-row-item-content,
+.assist-transparent .item-inside-post,
+.assist-transparent .home-announcements-title,
+.assist-transparent .home-announcements-text,
+.assist-transparent .home-announcements-date,
+.assist-transparent .anno-tag-item,
+.assist-transparent .block-desc-news-bottom,
+.assist-transparent .news-list-item-content .news-list-item-date,
+.assist-transparent .news-line-date,
+.assist-transparent .news-list-tem-text,
+.assist-transparent .other-news-item-content,
+.assist-transparent .page-event-content-section .list-group-item a {
+	color: inherit;
+}
+
+.assist-transparent *[style*="color:"] {
+	color: inherit !important;
+}
+
+.assist-transparent .flex-top-header {
+	backdrop-filter: none;
+	background: inherit;
+}
+
+.assist-transparent .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+	filter: brightness(0.2);
+}
+
+.assist-transparent .btn-header-documents,
+.assist-transparent .btn-header-question,
+.assist-transparent .open-menu .btn-header-question,
+.assist-transparent .btn-header-uchet-wrap a,
+.assist-transparent .header-documents-dropdown a,
+.assist-transparent .show>.btn-danger.dropdown-toggle {
+	background-color: inherit;
+	color: inherit;
+}
+
+.assist-transparent .collapsed-item-link::after {
+	color: inherit;
+}
+
+.assist-transparent .flags-block {
+	filter: saturate(0%);
+}
+
+.assist-transparent section,
+.assist-transparent .inner-page-content-wrap,
+.assist-transparent .inner-breadcrumbs span,
+.assist-transparent span.text-logo {
+	color: inherit;
+}
+
+.assist-transparent .inner-page-content table tr,
+.assist-transparent .inner-page-content table tr>th {
+	background-color: inherit;
+	color: inherit;
+}
+
+.assist-transparent .inner-page-line,
+.assist-transparent section.bg-invert.inner-page-line .main-row-item-content::after {
+	color: inherit !important;
+}
+
+.assist-transparent a.ralated-blocks-content span {
+	text-shadow: none;
+}
+
+.assist-transparent a.ralated-blocks-content::before {
+	display: none;
+}
+
+.assist-transparent .main-row-item-content::after {
+	color: inherit !important;
+}
+
+.assist-transparent h2,
+.assist-transparent h3,
+.assist-transparent a {
+	color: inherit !important;
+}
+
+.assist-transparent .filter-result-direction-wrap,
+.assist-transparent .filter-from-input-wrap input::placeholder {
+	color: inherit !important;
+}
+
+.assist-transparent .sly-btns {
+	color: inherit;
+}
+
+.assist-transparent .custom-control-label::before,
+.assist-transparent .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+	background-color: inherit;
+}
+
+.assist-transparent span.title-widget,
+.assist-transparent .footer-contact,
+.assist-transparent .footer-contact a,
+.assist-transparent .filter-result-direction-wrap,
+.assist-transparent .inner-footer-info,
+.assist-transparent .home-slider__label,
+.assist-transparent .home-slider__item div.data-alt-item,
+.assist-transparent .banners-block .home-slider__text,
+.assist-transparent .home-slider__date,
+.assist-transparent .home-slider__title,
+.assist-transparent .footer-row-item .inner-footer-info {
+	color: inherit;
+}
+
+.assist-transparent .dropdown-filter-menu {
+	color: inherit;
+}
+
+.assist-transparent .card {
+	color: inherit;
+}
+
+.assist-transparent .collapsed-card-header {
+	color: inherit;
+}
+
+.assist-transparent .dropdown-filter-item .card-header[aria-expanded=true]+.collapsed-card-callapse,
+.assist-transparent .dropdown-filter-item .card-header[aria-expanded=true] {
+	color: inherit;
+}
+
+.assist-transparent .collapsed-item-text ul>li {
+	border: none;
+}
+
+.assist-transparent .inside-fixed-menu,
+.assist-transparent .header-news-row,
+.assist-transparent .section-home-footer .section-blocks-line {
+	background: inherit;
+	color: inherit;
+}
+
+.assist-transparent .inside-fixed-menu .grid-item:not(.btn-header-documents-grid-container) {
+	background: inherit !important;
+	color: inherit;
+}
+
+.assist-transparent span.name-block-white,
+.assist-transparent span.name-reu {
+	color: inherit;
+}
+
+.assist-transparent .open-menu span.burger-icon::before,
+.assist-transparent .open-menu span.burger-icon {
+	background: inherit;
+}
+
+/*events-page*/
+.assist-transparent .page-event-info-name {
+	color: inherit;
+}
+
+.assist-transparent .ya-share2__badge {
+	background-color: transparent !important;
+	color: inherit;
+}
+
+.assist-transparent .calendar-moth-title {
+	background: transparent;
+}
+
+.assist-transparent .events-calendar-date-content {
+	background-color: inherit;
+	color: inherit;
+}
+
+.assist-transparent .events-calendar-date-name,
+.assist-transparent .item-weekend .events-calendar-date-name {
+	font-size: 1rem;
+	font-weight: 400;
+	color: inherit;
+}
+
+.assist-transparent .events-calendar-date-num,
+.assist-transparent .item-weekend .events-calendar-date-num {
+	font-size: 1.1429rem;
+	font-weight: 800;
+	color: inherit;
+}
+
+.assist-transparent .sly-container-calendar .sly-frame::before,
+.assist-transparent .sly-container-calendar .sly-frame::after {
+	display: none;
+}
+
+.assist-transparent .events-filter-item {
+	background-color: inherit;
+}
+
+.assist-transparent .events-filter-item.active {
+	background-color: inherit;
+	color: inherit !important;
+}
+
+.assist-transparent .events-list-item-edate,
+.assist-transparent .events-list-item-status {
+	color: inherit;
+}
+
+.assist-transparent .page-link {
+	background-color: inherit;
+}
+
+.assist-transparent .events-list-item-date,
+.assist-transparent .events-list-item-title {
+	color: inherit;
+}
+
+/*staff-page */
+.assist-transparent .page-staff-header-subtitle,
+.assist-transparent .font-color-accent,
+.assist-transparent .search-collapse-form-row-label,
+.assist-transparent .custom-control-label {
+	color: inherit;
+}
+
+.assist-transparent .input-group-text.input-search-btn,
+.assist-transparent .btn-light1,
+.assist-transparent .form-control,
+.assist-transparent .btn,
+.assist-transparent .btn:not(:disabled):not(.disabled):active,
+.assist-transparent .search-collapse-form-wrap .custom-control-label::before {
+	background-color: transparent;
+	color: inherit;
+}
+
+.assist-transparent .user-menu.btn,
+.assist-transparent .btn:not(:disabled):not(.disabled):active {
+	border: none;
+}
+
+.assist-transparent option:checked {
+	background-color: transparent;
+}
+
+.assist-transparent .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+	background-color: transparent;
+}
+
+.assist-transparent .assist-blue span.image-logo,
+.assist-transparent .custom-checkbox .custom-control-input:checked~.custom-control-label::after,
+.assist-transparent .block-desc-news-bottom img {
+	filter: invert(1);
+}
+
+.assist-transparent .btn-light1:hover,
+.assist-transparent .staff-btn-more:hover {
+	background-color: transparent;
+}
+
+.assist-transparent .inner-page-teachers-item-descr-bg,
+.assist-transparent .staff-info-experts-item {
+	background-color: transparent;
+	color: inherit;
+}
+
+.assist-transparent .search-collapse-form-wrap {
+	background-color: transparent;
+	color: inherit;
+}
+
+.assist-transparent input.search-input {
+	background: inherit;
+}
+
+.assist-transparent input.search-input:-webkit-autofill,
+.assist-transparent input.search-input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0px 1000px var(--bg-color) inset
+}
+
+.assist-transparent .input-search-with-icon path,
+.assist-transparent .input-search-with-icon input::placeholder {
+	color: inherit;
+}
+
+.assist-transparent .social-reu nav a {
+	color: inherit !important;
+}
+
+.assist-transparent .mark-required {
+	color: inherit;
+}
+
+.assist-transparent .form-control::placeholder {
+	color: inherit;
+}
+
+/*search-page*/
+.assist-transparent .serch-result-item {
+	background: transparent;
+	box-shadow: none;
+}
+
+.assist-transparent .search-result-item-path,
+.assist-transparent .serch-result-item-date .block-date,
+.assist-transparent input.search-input {
+	color: inherit;
+}
+
+.assist-transparent .serch-result-item-descr span {
+	color: inherit !important;
+	font-weight: 800;
+}
+
+/*menu-blocks*/
+.assist-transparent .menu-blocks-item-nonav {
+	padding-bottom: 20px;
+}
+
+.assist-transparent .menu-blocks-item-nonav a {
+	padding: 20px 20px;
+	border: 2px solid;
+	border-radius: 15px;
+}
+
+.assist-transparent .menu-blocks-item-nav .menu-blocks-title {
+	margin-top: 0;
+}
+
+.assist-transparent .menu-blocks-img {
+	display: none;
+	height: 0 !important;
+}
+
+.assist-transparent .menu-blocks-item a {
+	display: block;
+	height: fit-content;
+}
+
+.assist-transparent .menu-blocks-title,
+.assist-transparent .menu-block-item:hover .menu-blocks-title {
+	background-color: transparent !important;
+}
+
+/*modal*/
+.assist-transparent .modal-content {
+	color: inherit;
+}
+
+.assist-transparent .close {
+	color: inherit;
+}
+
+/*#endregion*/
+
+/*#region assist-transparent for colors*/
+.assist-white {
+	--bg-color: #fff;
+	--content-color: #000;
+}
+
+.assist-white span.image-logo,
+.assist-white .ya-share2__icon,
+.assist-white .btn-header-question::before {
+	filter: invert();
+}
+
+.assist-invert {
+	--bg-color: #000;
+	--content-color: #fff;
+}
+
+.assist-blue {
+	--bg-color: #9dd1ff;
+	--content-color: #063462;
+}
+
+.assist-blue span.image-logo,
+.assist-blue .ya-share2__icon,
+.assist-blue .btn-header-question::before {
+	filter: invert();
+}
+
+.assist-transparent body,
+.assist-transparent body.inner-page-body {
+	background: var(--bg-color) !important;
+	color: var(--content-color) !important;
+}
+
+.assist-transparent .flex-top-header,
+.assist-transparent:not(.inner-page-body) .flex-top-header,
+.assist-transparent .dropdown-menu,
+.assist-transparent .modal-content,
+.assist-transparent .section-home-footer .data-alt-item {
+	background-color: var(--bg-color);
+}
+
+.assist-transparent .reu_section_block,
+.assist-transparent .main-row-item-content,
+.assist-transparent a.ralated-blocks-content,
+.assist-transparent .section-home-footer .data-alt-item,
+.assist-transparent .inner-slider-wrap .sly-btns,
+.assist-transparent .filter-from-title,
+.assist-transparent .custom-control-label::before,
+.assist-transparent .custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.assist-transparent .filter-result-direction-wrap,
+.assist-transparent .card,
+.assist-transparent .inside-fixed-menu .grid-item:not(.btn-header-documents-grid-container),
+.assist-transparent .section-home-footer .data-alt-item,
+.assist-transparent .section-welcome .home-slider__item,
+.assist-transparent .home-slider__item,
+.assist-transparent .anons-block .home-slider__item,
+.assist-transparent .section-news .home-slider__item {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .inner-page-section .main-row-item-content,
+.assist-transparent .menu-blocks-item-nav .menu-blocks-title,
+.assist-transparent .menu-blocks-title,
+.assist-transparent .menu-block-item:hover .menu-blocks-title {
+	border-color: var(--content-color) !important;
+}
+
+.assist-transparent .btn-header-documents,
+.assist-transparent .dropdown-menu.show,
+.assist-transparent .btn-header-question,
+.assist-transparent .open-menu .btn-header-question,
+.assist-transparent .btn-header-uchet-wrap a,
+.assist-transparent .header-documents-dropdown a,
+.assist-transparent .show>.btn-danger.dropdown-toggle {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .inner-page-header,
+.assist-transparent .inner-page-line,
+.assist-transparent .inner-page-content-wrap,
+.assist-transparent .inner-header-menu-wrap {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .events-calendar-date-content,
+.assist-transparent .ya-share2__badge,
+.assist-transparent .item-weekend,
+.assist-transparent .events-filter-item,
+.assist-transparent .page-link,
+.assist-transparent .event-list-item,
+.assist-transparent .important-list-col,
+.assist-transparent .news-filter-item,
+.assist-transparent .news-list-item-content,
+.assist-transparent .other-news-item,
+.assist-transparent .page-event-content-section .list-group-item,
+.assist-transparent .menu-blocks-item-nonav a {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .staff-info-block,
+.assist-transparent .input-group-text.input-search-btn,
+.assist-transparent .btn-light1,
+.assist-transparent .form-control,
+.assist-transparent .btn,
+.assist-transparent .search-collapse-form-wrap .custom-control-label::before,
+.assist-transparent option:checked,
+.assist-transparent .staff-info-experts-item,
+.assist-transparent .search-collapse-form-wrap,
+.assist-transparent input.search-input,
+.assist-transparent .form-panic-text,
+.assist-transparent .inner-page-teachers-item-wrap {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .serch-result-item {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .modal-content {
+	border-color: var(--content-color);
+}
+
+.assist-transparent .main-row-item-content:hover,
+.assist-transparent .news-list-item-content:hover,
+.assist-transparent .other-news-item:hover {
+	box-shadow: inset 0 0 0 2px var(--bg-color), inset 0 0 0 4px var(--content-color);
+}
+
+.assist-transparent .burger-icon,
+.assist-transparent .burger-icon::after,
+.assist-transparent .burger-icon::before,
+.assist-transparent .open-menu span.burger-icon,
+.assist-transparent .open-menu span.burger-icon::after,
+.assist-transparent .open-menu span.burger-icon::before {
+	background: var(--content-color);
+}
+
+.assist-transparent .user-menu-icons path,
+.assist-transparent span.search-icon path,
+.assist-transparent span.clear-icon path {
+	fill: var(--content-color);
+}
+
+.assist-transparent .inner-page-body,
+.assist-transparent .inner-page-teachers-item-descr-bg::before,
+.assist-transparent .day-active.events-calendar-date-content,
+.assist-transparent .day-active.events-calendar-date-content {
+	background-color: var(--content-color);
+}
+
+.assist-transparent .inner-page-teachers-item-description {
+	background-color: var(--bg-color);
+}
+
+.assist-transparent .day-active.events-calendar-date-content .events-calendar-date-name,
+.assist-transparent .day-active.events-calendar-date-content .events-calendar-date-num {
+	color: var(--bg-color);
+}
+
+.assist-transparent .events-empty-line {
+	background-color: var(--content-color);
+}
+
+.assist-transparent .news-filter-item:hover,
+.assist-transparent .events-filter-item.active {
+	box-shadow: 0 0 0 1px var(--content-color);
+}
+
+.assist-transparent .fixed-menu {
+	box-shadow: 0 14px 28px var(--content-color);
+}
+
+.assist-transparent .page-link.active {
+	background-color: var(--content-color);
+	color: var(--bg-color) !important
+}
+
+.assist-transparent .btn-light1:hover,
+.assist-transparent .staff-btn-more:hover {
+	box-shadow: 0 0 0 2px var(--content-color);
+}
+
+.assist-transparent .b24-widget-button-social-item {
+	background-color: var(--bg-color);
+	border-color: var(--content-color);
+}
+
+.assist-transparent .b24-widget-button-social-item {
+	background-color: var(--bg-color) !important;
+	border-color: var(--content-color);
+}
+
+/*#endregion*/

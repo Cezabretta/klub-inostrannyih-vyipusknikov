@@ -1,0 +1,47 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-inf {
+    padding-top: 40px;
+    background-color: white;
+    max-width: 80%;
+    max-width: 1200px;
+}
+
+.person {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.photo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 255px;
+    max-width: 193px;
+    border-radius: 25px;   
+    border: 5px solid rgb(142, 144, 255);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column; /* Центрируем по горизонтали */
+    align-items: center;
+    justify-content:center;
+    border: 5px solid rgb(142, 144, 255); /* Пример рамки */
+    border-radius: 25px;
+    padding: 5%;
+}
+
+
